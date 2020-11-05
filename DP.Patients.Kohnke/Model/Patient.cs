@@ -12,5 +12,6 @@ namespace DP.Patients.KK.Model
         public string Surname { get; set; }
         public DateTime PositiveTestDate { get; set; }
         public int Age { get; set; }
+        public string Email { get; set; }
     }
 }

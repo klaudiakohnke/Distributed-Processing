@@ -1,0 +1,13 @@
+C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Client\bin\Debug\netcoreapp3.0\PR.Client.exe
+C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Client\bin\Debug\netcoreapp3.0\PR.Client.deps.json
+C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Client\bin\Debug\netcoreapp3.0\PR.Client.runtimeconfig.json
+C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Client\bin\Debug\netcoreapp3.0\PR.Client.runtimeconfig.dev.json
+C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Client\bin\Debug\netcoreapp3.0\PR.Client.dll
+C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Client\bin\Debug\netcoreapp3.0\PR.Client.pdb
+C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Client\obj\Debug\netcoreapp3.0\PR.Client.AssemblyInfoInputs.cache
+C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Client\obj\Debug\netcoreapp3.0\PR.Client.AssemblyInfo.cs
+C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Client\obj\Debug\netcoreapp3.0\PR.Client.dll
+C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Client\obj\Debug\netcoreapp3.0\PR.Client.pdb
+C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Client\obj\Debug\netcoreapp3.0\PR.Client.csprojAssemblyReference.cache
+C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Client\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Client\obj\Debug\netcoreapp3.0\PR.Client.csproj.CopyComplete
