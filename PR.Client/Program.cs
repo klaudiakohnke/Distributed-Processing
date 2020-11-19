@@ -1,8 +1,11 @@
-﻿using Newtonsoft.Json;
+﻿using IdentityModel.Client;
+using Microsoft.Identity.Client;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Net;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -60,9 +63,19 @@ namespace PR.Client
 
             HttpClient client = new HttpClient();
 
+            var app = PublicClientApplicationBuilder.Create("fce95216-40e5-4a34-b041-f287e46532be")
+                .WithAuthority("https://login.microsoftonline.com/146ab906-a33d-47df-ae47-fb16c039ef96/v2.0/")
+                .WithDefaultRedirectUri()
+                .Build();
+
+            var result =  await app.AcquireTokenInteractive(new[] { "api://fce95216-40e5-4a34-b041-f287e46532be/.default" }).ExecuteAsync();
+
+            string token = result.AccessToken;
+
+            client.DefaultRequestHeaders.Authorization = AuthenticationHeaderValue.Parse("Bearer " + token);
+
             Patient p = new Patient()
             {
-
                 FirstName = FirstNameRl,
                 Surname = SurnameRl,
                 PositiveTestDate = DateTime.Now,
@@ -72,12 +85,11 @@ namespace PR.Client
 
             string patientJson = System.Text.Json.JsonSerializer.Serialize(p);
 
-            Console.WriteLine("Wcisnij klawisz aby potwierdzic nowego pacjenta");
-            Console.ReadKey();
-
             await client.PostAsync("https://localhost:5001/api/patients",
                  new StringContent(patientJson, Encoding.UTF8, "application/json"));
         }
+
+  
 
 
         public static void ShowPatients()
@@ -89,13 +101,6 @@ namespace PR.Client
             JToken parsedResponse = JToken.Parse(response);
 
             Console.WriteLine(parsedResponse);
-            //Console.WriteLine(patient.Id + patient.FirstName + patient.Surname + patient.PositiveTestDate + patient.Age + patient.Email);
-            //Console.WriteLine(patient.FirstName);
-            //Console.WriteLine(patient.Surname);
-            //Console.WriteLine(patient.PositiveTestDate);
-            //Console.WriteLine(patient.Age);
-            //Console.WriteLine(patient.Email);
-
             Console.WriteLine("Nacisnij klawisz");
             Console.ReadKey();
         }

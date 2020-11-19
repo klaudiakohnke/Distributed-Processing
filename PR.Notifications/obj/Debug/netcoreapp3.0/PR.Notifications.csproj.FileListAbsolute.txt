@@ -116,4 +116,7 @@ C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Notifications\bin\Debug\netcor
 C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Notifications\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Notifications\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Notifications\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Notifications\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Notifications\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Notifications\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Notifications\obj\Debug\netcoreapp3.0\PR.Notifications.MvcApplicationPartsAssemblyInfo.cache
