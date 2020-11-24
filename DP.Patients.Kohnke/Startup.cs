@@ -15,6 +15,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Logging;
+using Serilog;
 
 namespace DP.Patients.KK
 {
@@ -30,6 +31,8 @@ namespace DP.Patients.KK
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddApplicationInsightsTelemetry();
+
             services.AddControllers();
 
             services.AddScoped<ServiceBusSender>();
@@ -55,12 +58,16 @@ namespace DP.Patients.KK
             });
 
             IdentityModelEventSource.ShowPII = true;
+
+            services.AddSingleton(_ => Log.Logger);
         
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseSerilogRequestLogging();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

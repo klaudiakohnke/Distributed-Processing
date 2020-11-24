@@ -12,6 +12,9 @@ namespace PR.Notifications.Services
     {
         public void SendNewUserEmail(string email)
         {
+
+            throw new InvalidOperationException("Cannot sent email");
+
             var smtpClient = new SmtpClient("smtp.gmail.com")
             {
                 Port = 587,

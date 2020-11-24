@@ -13,6 +13,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Logging;
 using PR.Notifications.Services;
+using Serilog;
 
 namespace PR.Notifications
 {
@@ -28,9 +29,14 @@ namespace PR.Notifications
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddApplicationInsightsTelemetry();
             services.AddControllers();
 
+            services.AddSingleton<EmailSender>();
             services.AddSingleton<ServiceBusConsumer>();
+
+            services.AddSingleton(_ => Log.Logger);
 
             services.AddAuthentication(options =>
             {
@@ -51,6 +57,7 @@ namespace PR.Notifications
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseSerilogRequestLogging();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

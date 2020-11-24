@@ -1,0 +1,20 @@
+2020-11-23 22:04:04.677 +01:00 [DBG] Hosting starting
+2020-11-23 22:04:05.016 +01:00 [INF] User profile is available. Using 'C:\Users\klaud\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-23 22:04:05.084 +01:00 [DBG] Reading data from file 'C:\Users\klaud\AppData\Local\ASP.NET\DataProtection-Keys\key-30ac7a40-db7f-4db0-a1ac-a428a5c28616.xml'.
+2020-11-23 22:04:05.135 +01:00 [DBG] Found key {30ac7a40-db7f-4db0-a1ac-a428a5c28616}.
+2020-11-23 22:04:05.161 +01:00 [DBG] Considering key {30ac7a40-db7f-4db0-a1ac-a428a5c28616} with expiration date 2021-02-06 11:28:47Z as default key.
+2020-11-23 22:04:05.180 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-23 22:04:05.187 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2020-11-23 22:04:05.192 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-23 22:04:05.202 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2020-11-23 22:04:05.210 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2020-11-23 22:04:05.218 +01:00 [DBG] Using key {30ac7a40-db7f-4db0-a1ac-a428a5c28616} as the default key.
+2020-11-23 22:04:05.221 +01:00 [DBG] Key ring with default key {30ac7a40-db7f-4db0-a1ac-a428a5c28616} was loaded during application startup.
+2020-11-23 22:04:07.324 +01:00 [DBG] Failed to locate the development https certificate at 'null'.
+2020-11-23 22:04:07.439 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: E178DC32278723E461229D0E552153B5625FD686)
+2020-11-23 22:04:07.462 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-23 22:04:07.465 +01:00 [DBG] Loaded hosting startup assembly PR.Notifications
+2020-11-23 22:04:07.471 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-23 22:04:07.473 +01:00 [INF] Hosting environment: Development
+2020-11-23 22:04:07.475 +01:00 [INF] Content root path: C:\Users\klaud\source\repos\DP.Patients.Kohnke\PR.Notifications
+2020-11-23 22:04:07.477 +01:00 [DBG] Hosting started

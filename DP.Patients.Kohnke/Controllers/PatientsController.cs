@@ -41,6 +41,12 @@ namespace DP.Patients.KK.Controllers
            await _sender.SendMessage(new MessagePayload() { EventName = "NewUserRegistered", UserEmail = "klaudiakohnke@gmail.com" });
             return Created("api/patients/", p);
         }
+
+        [HttpPut]
+        public IActionResult InvalidAction()
+        {
+            throw new InvalidOperationException("Testowy wyjatek");
+        }
     }
    
 }
